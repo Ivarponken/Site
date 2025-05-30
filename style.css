@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    color: #2F3E46;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    background-color: #8DA47E;
+    padding: 15px;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+}
+.logo img{
+    top: 10px;
+    left: 10px;
+    width: 50px;    /* Lägg till önskad bredd */
+    height: 50px;   /* Lägg till önskad höjd */
+}
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+button {
+    background-color: #B6C9A9;
+    color: #2F3E46;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
