@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
       rel="stylesheet"
@@ -17,8 +18,8 @@
         <img src="logo.png" alt="Logo" />
       </div>
       <div class="buttons">
-        <button class="Projects">Projects</button>
-        <button class="About">About</button>
+        <button class="Projects" onclick="scrollto('1')">Projects</button>
+        <button class="About" onclick="scrollto('2')">About</button>
         <button class="Contact">Contact</button>
       </div>
     </div>
@@ -35,7 +36,7 @@
     </div>
     <h1 class="shittext">My Recent Projects</h1>
     <div class="shit">
-      <div class="project">
+      <div class="project"id="1">
         <div class="projectbox"></div>
         <div class="projectbox"></div>
         <div class="projectbox"></div>
@@ -45,7 +46,7 @@
     <div class="about">
       <div class="me">
         <h1 class="aboutme">About me</h1>
-        <p class="aboutmetext">
+        <p class="aboutmetext" id="2">
           Hi, I'm Ivar—professional button pusher and part-time keyboard wizard.
           I spend my days smashing keys, hoping code compiles, and pretending I
           understand why it doesn’t. I'm basically the digital equivalent of
@@ -58,5 +59,15 @@
       </div>
       <div class="pic"><img class="pic" src="logo.png" alt="Logo" /></div>
     </div>
+  <div class="contact">
+    <h1>Contact Me</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+    <script src="script.js"></script>
   </body>
 </html>
