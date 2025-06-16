@@ -275,3 +275,22 @@ a {
 .contact-form button:hover {
   transform: scale(1.04);            /* Gör knappen lite större vid hover */
 }
+.skills {
+  display: flex;                     /* Flexbox för att centrera innehållet */
+  flex-direction: column;            /* Staplar innehållet vertikalt */
+  align-items: center;               /* Centrerar horisontellt */
+  background-color: #8da47e;         /* Bakgrundsfärg */
+  width: 600px;                      /* Bredd */
+  height: 300px;                     /* Höjd */
+  border-radius: 30px;               /* Rundade hörn */
+  margin: 100px auto 0 auto;         /* Centrerar och ger avstånd uppåt */
+  padding: 20px 0;                   /* Luft upptill och nedtill */
+}
+.skillstext {
+  margin-right: 400px;                 /* Flyttar rubriken åt höger */
+}
+.skillsbox {
+  margin-right: 350px;                /* Flyttar texten åt vänster */
+  font-size: 20px;                   /* Storlek på texten */
+  font-weight: 800;  
+}
