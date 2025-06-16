@@ -1,192 +1,277 @@
 body {
-  margin: 0;
-  color: #2f3e46;
-  font-family: "Poppins", sans-serif;
-  background-color: #faf5ee;
-  overflow-x: hidden;
+  padding-top: 90px;                /* Skapar plats för den fasta headern */
+  margin: 0;                        /* Tar bort standardmarginal */
+  color: #2f3e46;                   /* Standard textfärg */
+  font-family: "Poppins", sans-serif; /* Sätter typsnitt */
+  background-color: #faf5ee;        /* Bakgrundsfärg på sidan */
+  overflow-x: hidden;               /* Förhindrar horisontell scroll */
 }
-.header {
-  background-color: #8da47e;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  position: fixed;
-  height: 90px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
 
+.header {
+  position: fixed;                  /* Gör headern fast högst upp */
+  background-color: #8da47e;        /* Bakgrundsfärg på headern */
+  top: 0;                           /* Fäster i toppen av sidan */
+  padding: 20px;                    /* Inre marginal */
+  width: 100%;                      /* Full bredd */
+  height: 90px;                     /* Höjd på headern */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); /* Skugga under headern */
+  box-sizing: border-box;           /* Inkluderar padding i bredden */
+  z-index: 1000;                    /* Lägger headern över annat innehåll */
 }
+
 .logo img {
-  top: 10px;
-  left: 10px;
-  width: 50px;
+  top: 10px;                        /* (Om position används) Avstånd från toppen */
+  left: 10px;                       /* (Om position används) Avstånd från vänster */
+  width: 50px;                      /* Storlek på loggan */
   height: 50px;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s; /* Mjuk övergång vid hover */
 }
 
 .logo img:hover {
-  transform: scale(1.15) rotate(-5deg);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transform: scale(1.15) rotate(-5deg); /* Förstorar och roterar loggan vid hover */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* Skugga vid hover */
 }
+
 .buttons {
-  display: inline-flex;
-  padding: 5px 25px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  position: absolute;
-  top: 25px;
-  right: 50px;
+  display: inline-flex;              /* Lägger knapparna på rad */
+  padding: 5px 25px;                 /* Inre marginal */
+  justify-content: center;           /* Centrerar knapparna horisontellt */
+  align-items: center;               /* Centrerar vertikalt */
+  gap: 5px;                          /* Avstånd mellan knapparna */
+  position: absolute;                /* Positionerar knapparna i headern */
+  top: 25px;                         /* Avstånd från toppen */
+  right: 50px;                       /* Avstånd från höger */
 }
+
 button {
-  background-color: #8da47e;
-  color: #2f3e46;
-  padding: 5px 25px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 800;
-    transition: background-color 0.3s, transform 0.2s;
+  background-color: #8da47e;         /* Bakgrundsfärg på knappar */
+  color: #2f3e46;                    /* Textfärg */
+  padding: 5px 25px;                 /* Inre marginal */
+  border: none;                      /* Ingen kantlinje */
+  border-radius: 8px;                /* Rundade hörn */
+  font-weight: bold;                 /* Fet text */
+  cursor: pointer;                   /* Pekare vid hover */
+  font-size: 15px;                   /* Textstorlek */
+  font-weight: 800;                  /* Extra fet text */
+  transition: background-color 0.3s, transform 0.2s; /* Mjuk övergång vid hover */
+}
+
+button:hover {
+  background-color: #b6c9a9;         /* Ändrar bakgrundsfärg vid hover */
+  transform: scale(1.07);            /* Förstorar knappen lite vid hover */
+}
+
+.content {
+  background-color: #8da47e;         /* Bakgrundsfärg på content-sektionen */
+  padding: 50px;                     /* Inre marginal */
+  width: 100%;                       /* Full bredd */
+  height: 500px;                     /* Höjd */
+  margin: 0 auto;                    /* Centrerar om det behövs */
+  box-sizing: border-box;            /* Inkluderar padding i bredden */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); /* Skugga under headern */
 
 }
-button:hover {
-  background-color: #b6c9a9;
-  transform: scale(1.07);
-}
-.content {
-  background-color: #8da47e;
-  padding: 50px;
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+
 p {
-  font-weight: 800;
+  font-weight: 800;                  /* Gör all text i p-taggar fet */
 }
+
 .logo2 img {
-  width: 300px;
+  width: 300px;                      /* Storlek på andra loggan */
   height: 300px;
-  border-radius: 40px;
+  border-radius: 40px;               /* Rundade hörn */
 }
+
 .content-row {
-  display: flex;
-  align-items: center;
-  gap: 50px; /* Avstånd mellan bild och text */
+  display: flex;                     /* Lägger bild och text på rad */
+  align-items: center;               /* Centrerar vertikalt */
+  gap: 50px;                         /* Avstånd mellan bild och text */
 }
 
 .text {
-  font-size: 50px;
-  text-align: left;
-  margin-top: 0;
-  margin-left: 0;
+  font-size: 50px;                   /* Stor text */
+  text-align: left;                  /* Vänsterjusterad text */
+  margin-top: 0;                     /* Ingen toppmarginal */
+  margin-left: 0;                    /* Ingen vänstermarginal */
 }
+
 .text h1 {
-  margin-bottom: 5px; /* Mindre avstånd till p */
+  margin-bottom: 5px;                /* Mindre avstånd till p */
 }
+
 .text p {
-  margin-top: 0;       /* Ingen extra toppmarginal */
-  margin-left: 90px;    /* Flytta p lite till vänster */
+  margin-top: 0;                     /* Ingen extra toppmarginal */
+  margin-left: 90px;                 /* Flytta p lite till vänster */
 }
+
 .shittext {
-  margin-top: 100px;
-  text-align: center;
+  margin-top: 100px;                 /* Avstånd ovanför rubriken */
+  text-align: center;                /* Centrerar texten */
 }
-.shit{
-display: flex;
-  justify-content: center; /* Centers child horizontally */    /* Centers child vertically (optional) */
+
+.shit {
+  display: flex;                     /* Flexbox för att centrera projektboxarna */
+  justify-content: center;           /* Centrerar horisontellt */
+  /* align-items: center; (valfritt, centrerar vertikalt) */
 }
+
 .project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: #8da47e;
-  width: 1300px;
-height: 450px;
-border-radius: 30px;
+  display: flex;                     /* Lägger projektboxarna på rad */
+  justify-content: center;           /* Centrerar horisontellt */
+  align-items: center;               /* Centrerar vertikalt */
+  gap: 20px;                         /* Avstånd mellan projektboxarna */
+  background-color: #8da47e;         /* Bakgrundsfärg */
+  width: 1300px;                     /* Bredd på projektsektionen */
+  height: 450px;                     /* Höjd */
+  border-radius: 30px;               /* Rundade hörn */
 }
+
 .projectbox {
-  background: #D1D1D1;
-  border-radius: 15px;
-  width: 400px;
-  height: 300px;
-  transition: transform 0.7s;
-
+  background: #d1d1d1;               /* Bakgrundsfärg på varje projektbox */
+  border-radius: 15px;               /* Rundade hörn */
+  width: 400px;                      /* Bredd */
+  height: 300px;                     /* Höjd */
+  transition: transform 0.7s;        /* Mjuk övergång vid hover */
 }
+
+a {
+  color: #2f3e46;                    /* Länkfärg */
+  text-decoration: none;             /* Ingen understrykning */
+}
+
 .view-more {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-weight: 800;
-  margin-top: 20px;
-  transition:  0.2s;
+  display: block;                    /* Gör länken till ett blockelement */
+  width: 100%;                       /* Full bredd */
+  text-align: center;                /* Centrerar texten */
+  font-weight: 800;                  /* Fet text */
+  margin-top: 20px;                  /* Avstånd ovanför */
+  transition: 0.2s;                  /* Mjuk övergång vid hover */
 }
-.view-more:hover{
-  transform: scale(1.1);
+
+.view-more:hover {
+  transform: scale(1.1);             /* Förstorar länken vid hover */
 }
+
 .projectbox:hover {
-  transform: scale(1.07);
+  transform: scale(1.07);            /* Förstorar projektboxen vid hover */
 }
-.about{
-  margin-top: 150px;
-  display: flex;
-  justify-content: center; /* center them horizontally */
-  align-items: center; 
-  margin-bottom: 30px;
+
+.about {
+  margin-top: 150px;                 /* Avstånd ovanför about-sektionen */
+  display: flex;                     /* Flexbox för att lägga .me och .pic bredvid varandra */
+  justify-content: center;           /* Centrerar horisontellt */
+  align-items: center;               /* Centrerar vertikalt */
+  margin-bottom: 30px;               /* Avstånd under about-sektionen */
 }
+
 .me {
-  background-color: #8da47e;
-  width: 700px;
-height: 500px;
-border-radius: 20px;
+  background-color: #8da47e;         /* Bakgrundsfärg på me-boxen */
+  width: 700px;                      /* Bredd */
+  height: 500px;                     /* Höjd */
+  border-radius: 20px;               /* Rundade hörn */
 }
+
 .pic {
-  background-color: #8da47e;
-  width: 400px;
-  height: 400px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;  
+  background-color: #8da47e;         /* Bakgrundsfärg på bildboxen */
+  width: 400px;                      /* Bredd */
+  height: 400px;                     /* Höjd */
+  border-bottom-right-radius: 15px;  /* Rundat nedre högra hörn */
+  border-top-right-radius: 15px;     /* Rundat övre högra hörn */
+  display: flex;                     /* Flexbox för att centrera bilden */
+  justify-content: center;           /* Centrerar bilden horisontellt */
+  align-items: center;               /* Centrerar bilden vertikalt */
 }
+
 .pic img {
-  display: block;
-  margin: auto;
-  width: 80%;
+  display: block;                    /* Gör bilden till blockelement */
+  margin: auto;                      /* Centrerar bilden */
+  width: 80%;                        /* Storlek på bilden */
   height: 80%;
-  border-radius: 15px;
+  border-radius: 15px;               /* Rundade hörn på bilden */
 }
+
 .aboutme {
-  margin-left: 50px;
+  margin-left: 50px;                 /* Flyttar rubriken åt höger */
 }
+
 .aboutmetext {
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 20px;
+  margin-left: 50px;                 /* Flyttar texten åt höger */
+  margin-right: 50px;                /* Flyttar texten åt vänster */
+  font-size: 20px;                   /* Storlek på texten */
 }
+
 #mobile-message {
-      display: none;
-    }
+  display: none;                     /* Döljer mobilmeddelandet som standard */
+}
 
-    /* Mobile view: hide everything, show "NO" */
-    @media screen and (max-width: 768px) {
-      body > *:not(#mobile-message) {
-        display: none !important;
-      }
+/* Mobilvy: döljer allt utom #mobile-message */
+@media screen and (max-width: 768px) {
+  body > *:not(#mobile-message) {
+    display: none !important;        /* Döljer allt utom mobilmeddelandet */
+  }
 
-      #mobile-message {
-        display: flex;
-        position: fixed;
-        inset: 0;
-        background: black;
-        color: white;
-        font-size: 5rem;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      }
-    }
+  #mobile-message {
+    display: flex;                   /* Visar mobilmeddelandet */
+    position: fixed;
+    inset: 0;
+    background: black;
+    color: white;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+}
+
+.contact {
+  display: flex;                     /* Flexbox för att centrera innehållet */
+  flex-direction: column;            /* Staplar innehållet vertikalt */
+  align-items: center;               /* Centrerar horisontellt */
+  background-color: #8da47e;         /* Bakgrundsfärg */
+  width: 600px;                      /* Bredd */
+  height: 400px;                     /* Höjd */
+  border-radius: 30px;               /* Rundade hörn */
+  margin: 100px auto 0 auto;         /* Centrerar och ger avstånd uppåt */
+  padding: 20px 0;                   /* Luft upptill och nedtill */
+  margin-bottom: 100px;              /* Avstånd under kontaktsektionen */
+}
+
+.contact-form {
+  display: flex;                     /* Flexbox för formulärinnehållet */
+  flex-direction: column;            /* Staplar fälten vertikalt */
+  gap: 15px;                         /* Avstånd mellan fälten */
+  width: 90%;                        /* Formuläret tar upp 90% av boxens bredd */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;                     /* Inre marginal */
+  border-radius: 10px;               /* Rundade hörn */
+  border: none;                      /* Ingen kantlinje */
+  font-size: 1rem;                   /* Textstorlek */
+  background: #f0f4ef;               /* Ljus bakgrund */
+  color: #2f3e46;                    /* Textfärg */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04); /* Liten skugga */
+  resize: none;                      /* Gör så att textarea inte kan ändras i storlek */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;                     /* Ingen extra kant vid fokus */
+}
+
+.contact-form button {
+  background-color: #b6c9a9;         /* Bakgrundsfärg på knappen */
+  color: #2f3e46;                    /* Textfärg */
+  font-weight: bold;                 /* Fet text */
+  border: none;                      /* Ingen kantlinje */
+  border-radius: 10px;               /* Rundade hörn */
+  padding: 12px 0;                   /* Inre marginal upptill och nedtill */
+  font-size: 1.1rem;                 /* Textstorlek */
+  cursor: pointer;                   /* Pekare vid hover */
+  transition: transform 0.2s; /* Mjuk övergång vid hover */
+}
+
+.contact-form button:hover {
+  transform: scale(1.04);            /* Gör knappen lite större vid hover */
+}
