@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    
+
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-     <div id="mobile-message">NO</div>
+    <div id="mobile-message">NO</div>
     <div class="header">
       <div class="logo" onclick="scrollto('5')">
-        <img src="logo.png" alt="Logo"  />
+        <img src="logo.png" alt="Logo" />
       </div>
       <div class="buttons">
-        <button class="Projects" onclick="scrollto('1')">Projects</button>
         <button class="About" onclick="scrollto('2')">About</button>
+        <button class="Projects" onclick="scrollto('1')">Projects</button>
         <button class="Contact" onclick="scrollto('3')">Contact</button>
       </div>
     </div>
@@ -34,15 +34,6 @@
         </div>
       </div>
     </div>
-    <h1 class="shittext">My Recent Projects</h1>
-    <div class="shit">
-      <div class="project"id="1">
-        <div class="projectbox"></div>
-        <div class="projectbox"></div>
-        <div class="projectbox"></div>
-      </div>
-    </div>
-    <a class="view-more" href="project.html">View More</a>
     <div class="about">
       <div class="me">
         <h1 class="aboutme">About me</h1>
@@ -59,32 +50,73 @@
       </div>
       <div class="pic"><img class="pic" src="logo.png" alt="Logo" /></div>
     </div>
+    <h1 class="shittext">My Recent Projects</h1>
+    <div class="shit">
+      <div class="project" id="1">
+        <div class="projectbox">
+          <a href="https://github.com/Ivarponken/Site" target="_blank">
+            <img src="nedladdning (1).png" />
+          </a>
+          <div class="project-title">Portfolio site</div>
+        </div>
+        <div class="projectbox">          <a href="https://github.com/Ivarponken/xkcd" target="_blank">
+            <img src="nedladdning (2).png" />
+          </a>
+          <div class="project-title">XKCD clone</div></div>
+        <div class="projectbox"></div>
+      </div>
+    </div>
+    <a class="view-more" href="project.html">View More</a>
     <div class="skills">
       <h1 class="skillstext">My Skills</h1>
       <div class="skillsbox">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-HTML</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-CSS</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-JavaScript</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-PHP?</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-Git</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-Figma</div>
+        <div class="skill">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          />
+          HTML
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          />
+          CSS
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          />
+          JavaScript
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+          />
+          PHP?
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+          />
+          Git
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+          />
+          Figma
+        </div>
       </div>
-      </div>
-  <div class="contact" id="3">
-    <h1>Contact Me</h1>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+    </div>
+    <div class="contact" id="3">
+      <h1>Contact Me</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
