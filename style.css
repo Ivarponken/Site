@@ -287,10 +287,14 @@ a {
   padding: 20px 0;                   /* Luft upptill och nedtill */
 }
 .skillstext {
-  margin-right: 400px;                 /* Flyttar rubriken åt höger */
+  margin-right: 350px;                 /* Flyttar rubriken åt höger */
 }
 .skillsbox {
   margin-right: 350px;                /* Flyttar texten åt vänster */
   font-size: 20px;                   /* Storlek på texten */
   font-weight: 800;  
+}
+.skill img {
+  width: 25px;                        /* Storlek på varje ikon */
+  height: 25px;
 }
